@@ -9,17 +9,27 @@
 
 # pdf-table-pull-lite
 
+[![Tests](https://github.com/tidybytetools/pdf-table-pull-lite/actions/workflows/tests.yml/badge.svg)](https://github.com/tidybytetools/pdf-table-pull-lite/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/tidybytetools/pdf-table-pull-lite/blob/main/LICENSE)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
-[![MCP server](https://img.shields.io/badge/MCP-stdio-purple.svg)](#use-it-with-your-ai-app-mcp)
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-listed-green.svg)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.tidybytetools/pdf-table-pull-lite)
-[![PyPI downloads](https://img.shields.io/pypi/dm/pdf-table-pull-lite.svg)](https://pypistats.org/packages/pdf-table-pull-lite)
-[![Glama score](https://glama.ai/mcp/servers/tidybytetools/pdf-table-pull-lite/badges/score.svg)](https://glama.ai/mcp/servers/tidybytetools/pdf-table-pull-lite)
-[![Action test](https://github.com/tidybytetools/pdf-table-pull-lite/actions/workflows/action-test.yml/badge.svg)](https://github.com/tidybytetools/pdf-table-pull-lite/actions/workflows/action-test.yml)
+[![Version](https://img.shields.io/github/v/release/tidybytetools/pdf-table-pull-lite?label=version)](https://github.com/tidybytetools/pdf-table-pull-lite/releases)
+[![Apify](https://apify.com/actor-badge?actor=tidybytetools/pdf-table-pull)](https://apify.com/tidybytetools/pdf-table-pull)
 
 **Free. No API key. Runs on your own computer, so your PDFs stay with you.**
 
 A tool that pulls the tables out of a text PDF and saves each one as a CSV file.
+
+## Example
+
+From a real text PDF (`ruled.pdf` in the tests folder), the first table was saved as this CSV:
+
+```csv
+Region,Q1,Q2
+North,"1,200","1,350"
+South,980,(40)
+```
+
+The same file also had 3 more tables. The tool writes one CSV file per table. Scanned, image-only pages are skipped and listed. This free tool does not write Excel and does not do OCR.
+
 Need Excel output, scanned PDFs or tables joined across pages? The paid version does that: **[pdf-table-pull on Gumroad](https://tidybyte.gumroad.com/l/hkxqxh)**
 
 Runs on your own computer, so your PDFs are never uploaded anywhere. MIT license. Python 3.10 or newer, on Windows, Mac and Linux.
@@ -33,10 +43,6 @@ Also searched as: ES: extraer tablas de PDF, PDF a CSV / PT: extrair tabelas de 
 - **[Pro version on Gumroad](https://tidybyte.gumroad.com/l/hkxqxh)** — Excel output, scanned PDFs, tables joined across pages
 
 <!-- mcp-name: io.github.tidybytetools/pdf-table-pull-lite -->
-
-## Before and after
-
-Before: a text PDF (you can highlight the words) with a table. After: one CSV file per table. Scanned, image-only pages are skipped and listed. This free tool does not write Excel and does not do OCR.
 
 ## Install
 
