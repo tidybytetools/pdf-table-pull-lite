@@ -30,6 +30,8 @@ South,980,(40)
 
 The same file also had 3 more tables. The tool writes one CSV file per table. Scanned, image-only pages are skipped and listed. This free tool does not write Excel and does not do OCR.
 
+![A terminal run of pdf-table-pull-lite pulling the first table from a PDF into a CSV file](docs/demo.gif)
+
 Need Excel output, scanned PDFs or tables joined across pages? The paid version does that: **[pdf-table-pull on Gumroad](https://tidybyte.gumroad.com/l/hkxqxh)**
 
 Runs on your own computer, so your PDFs are never uploaded anywhere. MIT license. Python 3.10 or newer, on Windows, Mac and Linux.
